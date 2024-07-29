@@ -63,7 +63,12 @@
                 imgIndex--;
             }
             imgElement.src = pictureArray[imgIndex];
+            //we can use this method also
+            // if(imgIndex>0){
+            //     imgIndex--;
+            // }
         }
+        
         //function to show next image
         function next() {
             if (imgIndex == pictureArray.length - 1) {
@@ -73,6 +78,10 @@
                 imgIndex++;
             }
             imgElement.src = pictureArray[imgIndex];
+             //we can use this method also
+            // if(imgIndex < pictureArray.length - 1){
+            //     imgIndex++;
+            // }
         }
 
          //To slide images at every 2sec
