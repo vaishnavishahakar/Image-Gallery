@@ -7,6 +7,17 @@
     <title>Image Gallery</title>
 
 <style>
+    body{
+        margin-top: 5%;
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
      .gallery-img {
             width: 300px;
             height: 200px;
@@ -43,6 +54,7 @@
 </head>
 
 <body>
+    <h1>IMAGE SLIDER</h1>
     <div class="btn-container">
         <img src="./images/one.jpg" class="gallery-img" id="img">
         <img src="./images/prev-arrow.png" class="btn btn-left" onclick="prev()" />
@@ -68,7 +80,7 @@
             //     imgIndex--;
             // }
         }
-        
+
         //function to show next image
         function next() {
             if (imgIndex == pictureArray.length - 1) {
@@ -83,6 +95,16 @@
             //     imgIndex++;
             // }
         }
+
+        //Optimise with conditional (ternary operator)
+        // function prev(){
+        //     imgIndex==0 ? imgIndex = pictureArray.length - 1 : imgIndex--;
+        //     imgElement.src=pictureArray[imgIndex]
+        // }
+        // function next(){
+        //     imgIndex == pictureArray.length - 1 ? imgIndex = 0 : imgIndex++;
+        //     imgElement.src=pictureArray[imgIndex]
+        // }
 
          //To slide images at every 2sec
         //setInterval(next, 2000);
