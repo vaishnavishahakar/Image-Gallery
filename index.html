@@ -66,6 +66,16 @@
             }
             imgElement.src = pictureArray[imgIndex];
         }
+        //function to show next image
+        function next() {
+            if (imgIndex == pictureArray.length - 1) {
+                imgIndex = 0;
+            }
+            else {
+                imgIndex++;
+            }
+            imgElement.src = pictureArray[imgIndex];
+        }
 
     </script>
 </body>
